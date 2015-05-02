@@ -1,5 +1,23 @@
 <ion-view title="Iltalehden fingerpori">
   <ion-content direction="xy" zooming="true" scrollbar-x="true" scrollbar-y="true" class="has-header padding">
-    <img src="{{iltalehtisrc}}" /> 
+
+    <div class="row">
+    <div class="col">
+    <button ng-click="edellinen()" class="button button-stable">
+      Edellinen
+    </button>
+    </div>
+    <div class="col">
+      <h4 class="title">{{cartoondate|date:'dd.MM.yyyy'}}</h1>
+    </div>
+    <div class="col">
+    <button ng-click="seuraava()" class="button button-stable">
+      Seuraava
+    </button>
+  </div>
+  </div>
+  <div class="row">
+    <img imageonload alt="Error" height="100%" width="100%" src="http://static.iltalehti.fi/sarjakuvat/Fingerpori_{{cartoondate|date:'yyyyMMdd'}}.gif" />
+  </div>
   </ion-content>
 </ion-view>

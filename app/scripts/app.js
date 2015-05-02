@@ -40,7 +40,7 @@ angular.module('Sarjakuvat', ['ionic', 'config', 'Sarjakuvat.controllers', 'Sarj
     // Each tab has its own nav history stack:
 
     .state('tab.dash', {
-      url: '/dash',
+      url: '/iltalehti',
       views: {
         'tab-dash': {
           templateUrl: 'templates/tab-dash.html',
@@ -50,7 +50,7 @@ angular.module('Sarjakuvat', ['ionic', 'config', 'Sarjakuvat.controllers', 'Sarj
     })
 
     .state('tab.friends', {
-      url: '/friends',
+      url: '/hesari',
       views: {
         'tab-friends': {
           templateUrl: 'templates/tab-friends.html',
@@ -79,7 +79,6 @@ angular.module('Sarjakuvat', ['ionic', 'config', 'Sarjakuvat.controllers', 'Sarj
     });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
+  $urlRouterProvider.otherwise('/tab/hesari');
 
 });
-
